@@ -15,10 +15,7 @@ while(<DATA>) {
 	$chars_hash{$char}++;
     }	
     
-    print "hash: ", %chars_hash, "\n";    
-
     my %counts = map { $_ => 1 } values %chars_hash;
-    print "counts: ", %counts, "\n";
     
     foreach my $count (keys %counts) {
 	if($count == 2) {
