@@ -9,7 +9,7 @@ open(DATA, "<input.txt") or die "Couldn't open the file, $!";
 while(<DATA>) {
     chomp $_;
     my @line_chars = split //, $_;
-    my %chars_hash = map { $_ => 0} @line_chars;
+    my %chars_hash = map { $_ => 0 } @line_chars;
 
     foreach my $char (@line_chars) {
 	$chars_hash{$char}++;
